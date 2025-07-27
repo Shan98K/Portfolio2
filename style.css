@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+.background,
+.background * {
+  pointer-events: none;
+}
 .background{
   position: fixed;
   z-index: -1;
@@ -37,11 +41,23 @@
   transform: translate(-50%, 0);
   animation: orbit 12s linear infinite;
   z-index: 0;
+  will-change: transform;
+  transition: background 0.5s, box-shadow 0.5s; /* Smooth toggle */
 }
+
+/* Moon style */
 .celestial.moon {
   background: lightgray;
   box-shadow: 0 0 50px 15px rgba(200, 200, 200, 0.75);
 }
+
+/* Optional: Keep both sun and moon as toggleable classes */
+.celestial.sun {
+  background: yellow;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 0, 0.5);
+}
+
+/* Orbit animation */
 @keyframes orbit {
   0% {
     transform: translate(-50%, 0) rotate(0deg) translateY(450px) rotate(0deg);
@@ -53,6 +69,8 @@
     transform: translate(-50%, 0) rotate(360deg) translateY(450px) rotate(-360deg);
   }
 }
-.celestial , .buildings-container{
-    filter: blur(1px);
+
+/* Slight blur effect */
+.celestial, .buildings-container {
+  filter: blur(1px);
 }

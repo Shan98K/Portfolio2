@@ -2,18 +2,24 @@
     display: flex;
     justify-content: space-evenly;
 }
+.doublehashes.wrapped-half {
+  padding-inline: 20px;
+  justify-content: start;
+}
 .doublehashes{
+    padding-inline: 10px;
     margin-top: 20px;
     display: flex;
+    justify-content: center;
     width: max-content;
     max-width: 100%;
     flex-wrap: wrap;
-    gap: 20px;;
+    gap: 20px;
 }
 .hashholder{
-    text-decoration: none;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    text-decoration: none;
     align-items: center;
     padding: 3.5px;
     overflow: hidden;

@@ -1,18 +1,14 @@
+// Select the celestial object (sun/moon)
 const celestial = document.querySelector('.celestial');
 
-// Start with sun
+// Start with the 'sun' class
 celestial.classList.add('sun');
 
-// Function to toggle sun and moon
+// Function to toggle between sun and moon
 function toggleCelestial() {
-  if (celestial.classList.contains('sun')) {
-    celestial.classList.remove('sun');
-    celestial.classList.add('moon');
-  } else {
-    celestial.classList.remove('moon');
-    celestial.classList.add('sun');
-  }
+  celestial.classList.toggle('sun');
+  celestial.classList.toggle('moon');
 }
 
-// Toggle every full orbit cycle (matches your orbit animation duration)
-setInterval(toggleCelestial, 12000); // 10 seconds
+// Sync toggle with the end of each orbit animation cycle
+celestial.addEventListener('animationiteration', toggleCelestial);
