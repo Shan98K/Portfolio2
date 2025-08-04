@@ -31,30 +31,36 @@
   
   <!-- silder -->
   <div class="slidersbox">
-    <div class="slider" onclick="scrollLeft()">
+    <!-- silderLeft -->
+    <div id="sliderleft" class="slider" onclick="scrollLeft()">
       <img src="./images/previous.png" alt="">
     </div>
-    <div class="slider" onclick="scrollRight()">
+    
+    <!-- D2D Pages -->
+    <div class="wrapper" id="wrapper">
+      <div class="scroll-container" id="scrollContainer">
+        <div class="section" style="background-color: transparent;">Left 2</div>
+        <div class="section" style="background-color: transparent;">Left 1</div>
+        <div id="sectionmiddle" class="section" style="background-color: transparent;">
+          <!-- FRONTEND Developer -->
+          <div class="base">
+            <div class="baseFED">
+              <div class="baseFE">FRONTEND</div>
+              <div class="baseD">Developer</div>
+            </div>
+          </div>
+        </div>
+        <div class="section" style="background-color: transparent;">Right 1</div>
+        <div class="section" style="background-color: transparent;">Right 2</div>
+      </div>
+    </div>
+    
+    <!-- silderRight -->
+    <div id="sliderright" class="slider" onclick="scrollRight()">
       <img src="./images/next.png" alt="">
     </div>
   </div>
 
-  
-  <div class="wrapper" id="wrapper">
-    <div class="scroll-container" id="scrollContainer">
-      <div class="section" style="background-color: transparent;">Page 1</div>
-      <div class="section" style="background-color: transparent;">Page 2</div>
-      <div class="section" style="background-color: transparent;">
-        <!-- FRONTEND Developer -->
-        <div class="baseFED">
-          <div class="baseFE">FRONTEND</div>
-          <div class="baseD">Developer</div>
-        </div>
-      </div>
-      <div class="section" style="background-color: transparent;">Page 4</div>
-      <div class="section" style="background-color: transparent;">Page 5</div>
-    </div>
-  </div>
 
 
 

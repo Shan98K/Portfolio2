@@ -7,25 +7,22 @@ html, body {
   height: 100%;
   overflow-y: hidden;
 }
-.linkbutton{
-  position: fixed;
-}
 .wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  position: relative; /* absolute only if needed */
+  position: relative;
 }
 .scroll-container {
   display: flex;
-  width: 500vw; /* 5 sections */
-  height: 100vh;
+  width: 500%;
+  height: 50vh;
 }
 .section {
-  width: 100vw;
+  width: 20%;
   height: 100vh;
   flex-shrink: 0;
   scroll-snap-align: start;
@@ -33,15 +30,12 @@ html, body {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  background: blue;
 }
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 500vw; /* must match scroll-container */
-  height: 100vh;
-  z-index: -1;
-  overflow: hidden;
-  pointer-events: none;
+#sectionmiddle{
+  padding: 0px;
 }
-
+.baseFED{
+  position: absolute;
+  top: 20px;
+}
