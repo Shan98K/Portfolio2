@@ -5,35 +5,31 @@
 }
 html, body {
   height: 100%;
-  overflow-y: hidden;
+  overflow: hidden;
 }
-.wrapper {
-  overflow-x: scroll;
+.scroll-container {
+  display: flex;
   overflow-y: hidden;
+  overflow-x: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   width: 100%;
   height: 100vh;
-  position: relative;
-}
-.scroll-container {
-  display: flex;
-  width: 500%;
-  height: 50vh;
 }
 .section {
-  width: 20%;
-  height: 100vh;
-  flex-shrink: 0;
-  scroll-snap-align: start;
+  flex: 0 0 100%;
+  scroll-snap-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  flex-shrink: 0;
+  scroll-snap-align: start;
   font-size: 2rem;
-  background: blue;
 }
 #sectionmiddle{
   padding: 0px;
+  position: relative;
 }
 .baseFED{
   position: absolute;

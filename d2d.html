@@ -33,31 +33,30 @@
   <div class="slidersbox">
     <!-- silderLeft -->
     <div id="sliderleft" class="slider" onclick="scrollLeft()">
-      <img src="./images/previous.png" alt="">
+      <img src="./images/previous.png" id="backBtn" alt="">
     </div>
     
     <!-- D2D Pages -->
-    <div class="wrapper" id="wrapper">
-      <div class="scroll-container" id="scrollContainer">
-        <div class="section" style="background-color: transparent;">Left 2</div>
-        <div class="section" style="background-color: transparent;">Left 1</div>
-        <div id="sectionmiddle" class="section" style="background-color: transparent;">
-          <!-- FRONTEND Developer -->
-          <div class="base">
-            <div class="baseFED">
-              <div class="baseFE">FRONTEND</div>
-              <div class="baseD">Developer</div>
-            </div>
+    <div class="scroll-container" id="scrollContainer">
+      <div class="section">Left 2</div>
+      <div class="section">Left 1</div>
+      <div class="section" id="sectionmiddle">
+        <!-- FRONTEND Developer -->
+        <div class="base">
+          <div class="baseFED">
+            <div class="baseFE">FRONTEND</div>
+            <div class="baseD">Developer</div>
           </div>
         </div>
-        <div class="section" style="background-color: transparent;">Right 1</div>
-        <div class="section" style="background-color: transparent;">Right 2</div>
       </div>
+      <div class="section">Right 1</div>
+      <div class="section">Right 2</div>
     </div>
+
     
     <!-- silderRight -->
     <div id="sliderright" class="slider" onclick="scrollRight()">
-      <img src="./images/next.png" alt="">
+      <img src="./images/next.png" id="nextBtn" alt="">
     </div>
   </div>
 
@@ -81,7 +80,9 @@
   
   
 
-  <script src="slider.js"></script>
+  <script src="opencenter.js"></script>
+  <script src="scrollbtn.js"></script>
+  <script src="scrollmouse.js"></script>
   <script src="celestial.js"></script>
   <script src="buildings.js"></script>
 </body>
